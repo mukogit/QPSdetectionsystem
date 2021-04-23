@@ -1,0 +1,10 @@
+1)	2x Waveguide (we used 1mm diameter glass rods)
+2)	2x BNC plugs  
+3)	2x Light to Voltage sensor (TLV257R)
+4)	3x 100nF Capacitor
+5)	PJRC Teensy 4.0 microcontroller
+6)	4x Nuts/Bolts (M3)
+7)  USB-cable 
+
+Optional: 	- Operational amplifier LMC6042
+			- Resistors of choice for amplification
