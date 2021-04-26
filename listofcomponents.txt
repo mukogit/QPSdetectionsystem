@@ -4,8 +4,8 @@
 4)	3x 100nF Capacitor
 5)	PJRC Teensy 4.0 microcontroller
 6)	8x Nuts/Bolts (M3)
-7)  USB-cable
+7)  	USB-cable
 8)	electrical wiring 
 
 Optional: 	- Operational amplifier LMC6042
-			- Resistors of choice for amplification
+		- Resistors of choice for amplification
