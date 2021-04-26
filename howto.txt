@@ -8,7 +8,7 @@ Housing:
 	2)	Lid
 	3)	waveguide_clamp
 	
-You find all .stl files here: “https://github.com/mukogit/QPSdetectionsystem/tree/main/stl-files”
+You find all .stl files here: “https://github.com/mukogit/QPSdetectionsystem/blob/main/stl-files”
 
 Mounting:
 1)  Get all parts listed in: "https://github.com/mukogit/QPSdetectionsystem/blob/main/listofcomponents.txt"
