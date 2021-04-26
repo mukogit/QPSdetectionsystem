@@ -1,43 +1,23 @@
-Rapport: Fringe Box
-Intro: 
-Instructions for making the shell for the fringe box as well as the PCB board needed for the project. 
-Making: 
-1.	Begin with printing the PCB board on to a glossy paper and then cut it out. The Board also needs to be smaller than 40x 65 mm2 (Figure 1).
-You find the printable design here: “~D:\Users\co2pc\Box Sync\Glass Processing\Interferometry\Fringe Counter\PCB”
-Follow the instructions on the blue cabinet in the lab for making the PCB board.
-2.	Print the Following parts:
-Box:
-1)	Box
-2)	Lid
-3)	Fiber-clamp 
-You find all .stl files here: “~\Box Sync\Glass Processing\Interferometry\Fringe Counter\3D Printer”
+PCB board: 
+1.	You find the printable pcb layout: “https://github.com/mukogit/QPSdetectionsystem/blob/main/pcb/pcbboard.pdf”
+2.	Make the PCB board
 
-3.	Get all parts for the teensy board and solder them according to Figure 1
-1)	2x Black Cables (Ca 100mm)
-2)	2x Red Cables (Ca 100mm)
-3)	BNC plug  
-4)	Light to Voltage sensor (TLV257R) / Laser sensor
-5)	2x 10k Ω Resistor (The resistance value should be as close as possible to each other)
-6)	2x 1k Ω Resistor (The resistance value should be as close as possible to each other)
-7)	3x 100nF Capacitor (The capacitance values should be as close to each other as possible)
-8)	Teensy board
-9)	Pins for teensy 
-10)	Teensy DIP
-11)	4x Nuts (3M)
-12)	4x Bolts (3M)
-13)	Optional: Operational amplifier LMC6042 and two short cables (Ca 10mm)
-4.	Get the following items:
-1)	USB-cable 
-2)	2x Glass fiber
-3)	2,5 Hex key 
-5.	Put the 4 bolts into 2 separate fiber-clamps and then everything is good to go and screw the bolts from the bottom into the nuts. Put the glass fiber inside the fiber-clamp and then everything should be good to go.
-6.	You find the teensy and python code to record data here:
-“~\Box Sync\Glass Processing\Interferometry\Fringe Counter\Software”
-7.	“Install” T40_singlephasecounter onto your teensy. Your Teensy will record the voltage from your two sensors at 4 KHz and send them on the serial port to the computer.
-If you want to save the data run the python file “start.py”, connect to your Teensy and click “Continuous reading”. Your data will now be saved.
- 
+Housing:
+1. You can 3D-print the following files to be able to mount the pcb board in an opaque housing, and to clamp the waveguides in front of the detectors
+	1)	Box
+	2)	Lid
+	3)	waveguide_clamp
+	
+You find all .stl files here: “https://github.com/mukogit/QPSdetectionsystem/tree/main/stl-files”
 
-Picture 1: PCB board 
- 
-Download Figure 1
-Dowload print-version 
+Mounting:
+1)  Get all parts listed in: "https://github.com/mukogit/QPSdetectionsystem/blob/main/listofcomponents.txt"
+2)	Solder the components to the pcb-board as illustrated in: - "https://github.com/mukogit/QPSdetectionsystem/blob/main/pcb/pcb_description.pdf"
+															  - "https://github.com/mukogit/QPSdetectionsystem/blob/main/electricalcuircuit.pdf"
+3)	Mount the pcb-board inside the 3D-printed box.															  
+4)  Fasten waveguides inside the box to the pcb-board using the waveguide_clamps.
+
+Data recording:
+1)	You find the teensy and python code to record data here: "https://github.com/mukogit/\QPSdetectionsystem\software"
+2)	The Teensy microcontroller will record the voltage from your two sensors at 5 kHz and send them on the serial port to the computer.
+3)  If you run the python file "main.py", you connect to your Teensy (by choosing the right COM port) and the data is saved to the same folder as "main.py".
