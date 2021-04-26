@@ -1,5 +1,5 @@
 PCB board: 
-1.	You find the printable pcb layout: “https://github.com/mukogit/QPSdetectionsystem/blob/main/pcb/pcbboard.pdf”
+1.	You find the printable pcb layout: "https://github.com/mukogit/QPSdetectionsystem/blob/main/pcb/pcbboard.pdf"
 2.	Make the PCB board
 
 Housing:
@@ -8,7 +8,7 @@ Housing:
 	2)	Lid
 	3)	waveguide_clamp
 	
-You find all .stl files here: “https://github.com/mukogit/QPSdetectionsystem/blob/main/stl-files”
+You find all .stl files here: "https://github.com/mukogit/QPSdetectionsystem/tree/main/stl-files"
 
 Mounting:
 1)  Get all parts listed in: "https://github.com/mukogit/QPSdetectionsystem/blob/main/listofcomponents.txt"
@@ -18,6 +18,6 @@ Mounting:
 4)  Fasten waveguides inside the box to the pcb-board using the waveguide_clamps.
 
 Data recording:
-1)	You find the teensy and python code to record data here: "https://github.com/mukogit/\QPSdetectionsystem\software"
+1)	You find the teensy and python code to record data here: "https://github.com/mukogit/QPSdetectionsystem/tree/main/software"
 2)	The Teensy microcontroller will record the voltage from your two sensors at 5 kHz and send them on the serial port to the computer.
 3)  If you run the python file "main.py", you connect to your Teensy (by choosing the right COM port) and the data is saved to the same folder as "main.py".
